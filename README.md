@@ -2,6 +2,8 @@
 
 A polished, responsive portfolio for Mahmoud Samir, an Angular Frontend Developer based in Cairo, Egypt. It presents verified professional experience, technical strengths, and privacy-safe case studies for international remote opportunities.
 
+**Live site:** [mahmoud-samir-portfolio.plumape11.chatgpt.site](https://mahmoud-samir-portfolio.plumape11.chatgpt.site)
+
 ![Portfolio social preview](public/images/social-preview.svg)
 
 ## Highlights
