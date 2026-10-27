@@ -13,6 +13,11 @@ describe('portfolio data', () => {
     expect(confidentialProjects.every((project) => !project.githubUrl && !project.liveUrl)).toBeTrue();
   });
 
+  it('lists NovaDash and the Fuinco Admin Dashboard as one project', () => {
+    expect(PROJECTS.filter((project) => project.slug === 'novadash').length).toBe(1);
+    expect(PROJECTS.some((project) => project.slug === 'fuinco-admin-dashboard')).toBeFalse();
+  });
+
   it('keeps every skill and social group populated', () => {
     expect(SKILL_GROUPS.every((group) => group.skills.length > 0)).toBeTrue();
     expect(SOCIAL_LINKS.every((link) => link.href.length > 0)).toBeTrue();

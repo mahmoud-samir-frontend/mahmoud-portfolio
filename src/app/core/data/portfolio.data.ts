@@ -46,13 +46,13 @@ export const PROJECTS: readonly Project[] = [
     accessLabel: 'Local full-product implementation',
   },
   {
-    slug: 'fuinco-admin-dashboard',
-    title: 'Fuinco Admin Dashboard',
-    eyebrow: 'Full-stack project · Content management',
+    slug: 'novadash',
+    title: 'NovaDash',
+    eyebrow: 'Full-stack project · Fuinco content management',
     summary:
-      'A standalone bilingual control center for managing website content, calls to action, feature sections, localization, and synchronized route information.',
+      'A bilingual control center for managing website content, calls to action, feature sections, localization, and synchronized route information.',
     context:
-      'I designed and built this complete project end to end: a React and TypeScript administration frontend connected to a FastAPI and SQLite backend with authentication, persisted content, and structured editing workflows.',
+      'NovaDash is the Fuinco Admin Dashboard. I designed and built this complete project end to end: a React and TypeScript administration frontend connected to a FastAPI and SQLite backend with authentication, persisted content, and structured editing workflows.',
     role: 'Full-stack Developer · End-to-end ownership',
     contributions: [
       'Architected and implemented the complete frontend and backend workflow',
@@ -64,29 +64,11 @@ export const PROJECTS: readonly Project[] = [
     visual: 'analytics',
     confidential: true,
     imageUrl: 'images/projects/fuinco-admin-dashboard.png',
-    imageAlt: 'Fuinco Admin Dashboard hero-content editor',
-    imageCaption: 'Running full-stack product · Complete end-to-end implementation',
+    imageAlt: 'NovaDash Fuinco administration hero-content editor',
+    imageCaption: 'Running NovaDash full-stack product · Complete end-to-end implementation',
     privacyNote:
       'This authenticated editor view contains managed website content only. Login credentials, authentication tokens, backend source, and database records are not published.',
     accessLabel: 'Private full-stack project',
-  },
-  {
-    slug: 'novadash',
-    title: 'NovaDash',
-    eyebrow: 'Personal concept · Angular admin template',
-    summary:
-      'A portfolio concept for a modern SaaS administration experience, designed around reusable components, clear analytics, responsive layouts, and theme-ready foundations.',
-    context:
-      'NovaDash is presented as a design and architecture concept. It demonstrates how I structure dense operational information without claiming a separately published product or repository.',
-    role: 'Frontend architecture, interface design, and Angular implementation concept',
-    contributions: [
-      'Defined a scalable dashboard information architecture',
-      'Designed responsive navigation, analytics, and administration patterns',
-      'Planned reusable components and theme-ready visual tokens',
-    ],
-    technologies: ['Angular', 'TypeScript', 'SCSS', 'Chart.js'],
-    visual: 'analytics',
-    confidential: false,
   },
   {
     slug: 'sareb-platinum',

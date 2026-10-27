@@ -13,7 +13,7 @@ A polished, responsive portfolio for Mahmoud Samir, an Angular Frontend Develope
 - Angular 20 standalone components with lazy-loaded routes
 - Data-driven skills, social links, and project case studies
 - Dedicated project routes with verified screenshots from running product builds
-- Full case studies for SCOUTIFAI and an end-to-end React/FastAPI admin dashboard
+- Full case studies for SCOUTIFAI and NovaDash, the end-to-end React/FastAPI Fuinco admin dashboard
 - Reduced-motion support and semantic page structure
 - Downloadable CV and functional email, GitHub, and LinkedIn links
 - SEO, Open Graph, Twitter card, favicon, and robots metadata

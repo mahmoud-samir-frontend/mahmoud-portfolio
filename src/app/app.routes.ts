@@ -7,6 +7,7 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/home/home.component').then((component) => component.HomeComponent),
   },
+  { path: 'projects/fuinco-admin-dashboard', redirectTo: 'projects/novadash', pathMatch: 'full' },
   {
     path: 'projects/:slug',
     loadComponent: () =>
