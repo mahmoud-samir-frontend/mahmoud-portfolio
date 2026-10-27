@@ -28,7 +28,14 @@ import { ProjectVisualComponent } from '../../shared/components/project-visual/p
         </header>
 
         <section class="container case-visual-wrap">
-          <app-project-visual [type]="project.visual" [label]="project.title" />
+          @if (project.imageUrl; as imageUrl) {
+            <figure class="project-media case-project-media">
+              <img [src]="imageUrl" [alt]="project.imageAlt ?? project.title" />
+              <figcaption>Authenticated local product build · Sensitive operational data redacted</figcaption>
+            </figure>
+          } @else {
+            <app-project-visual [type]="project.visual" [label]="project.title" />
+          }
         </section>
 
         <section class="section case-content">
@@ -40,7 +47,7 @@ import { ProjectVisualComponent } from '../../shared/components/project-visual/p
             <div class="case-prose">
               <p>{{ project.context }}</p>
               @if (project.confidential) {
-                <div class="privacy-note"><app-icon name="check" /><p><strong>Confidentiality respected.</strong> The interface visual is an original abstraction created for this portfolio. It contains no production screenshots, customer data, source code, or API details.</p></div>
+                <div class="privacy-note"><app-icon name="check" /><p><strong>Confidentiality respected.</strong> This verified product view was captured from a local build. Operational identifiers are redacted, and no credentials, customer records, source code, or API details are published.</p></div>
               }
             </div>
           </div>

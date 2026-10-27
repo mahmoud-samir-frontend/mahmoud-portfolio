@@ -11,6 +11,8 @@ export interface Project {
   readonly technologies: readonly string[];
   readonly visual: ProjectVisual;
   readonly confidential: boolean;
+  readonly imageUrl?: string;
+  readonly imageAlt?: string;
   readonly githubUrl?: string;
   readonly liveUrl?: string;
 }

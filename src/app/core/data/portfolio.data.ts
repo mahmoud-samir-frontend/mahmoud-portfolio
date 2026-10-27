@@ -47,7 +47,7 @@ export const PROJECTS: readonly Project[] = [
     summary:
       'A GPS fleet-management platform for monitoring vehicles, reviewing trips, and understanding operational performance in real time.',
     context:
-      'Professional work completed at Fuinco. The portfolio describes my contribution at a safe, high level and does not reproduce proprietary screens, code, customer records, or endpoints.',
+      'Professional work completed at Fuinco. The screenshot was captured from an authenticated local build and sanitized to obscure operational details; no source code, credentials, customer records, or endpoints are published.',
     role: 'Frontend Developer',
     contributions: [
       'Developed vehicle-tracking dashboards with real-time data updates',
@@ -58,6 +58,8 @@ export const PROJECTS: readonly Project[] = [
     technologies: ['Angular', 'Ionic', 'TypeScript', 'REST APIs'],
     visual: 'map',
     confidential: true,
+    imageUrl: 'images/projects/sareb-platinum-dashboard.png',
+    imageAlt: 'Sanitized Sareb Platinum fleet-management dashboard',
   },
   {
     slug: 'skai-environmental-intelligence',
@@ -66,7 +68,7 @@ export const PROJECTS: readonly Project[] = [
     summary:
       'A unified monitoring platform that makes sensor readings, water usage, and operational data easier to understand and act on.',
     context:
-      'Professional work completed at Fuinco. Visuals on this site are illustrative abstractions, not screenshots of the production platform.',
+      'Professional work completed at Fuinco. The screenshot was captured from an authenticated local build in demo mode and contains no saved credentials, source code, or customer records.',
     role: 'Frontend Developer',
     contributions: [
       'Developed dashboards for sensor and environmental data',
@@ -77,6 +79,8 @@ export const PROJECTS: readonly Project[] = [
     technologies: ['Angular', 'Ionic', 'TypeScript', 'REST APIs'],
     visual: 'sensors',
     confidential: true,
+    imageUrl: 'images/projects/skai-dashboard.png',
+    imageAlt: 'SKAI environmental intelligence interface showing an industrial monitoring model',
   },
   {
     slug: 'food-drugs-logistics',
@@ -85,7 +89,7 @@ export const PROJECTS: readonly Project[] = [
     summary:
       'A logistics interface for tracking shipments and surfacing transport conditions that matter to time-sensitive operations.',
     context:
-      'Professional work completed at Fuinco. Details are limited to the responsibilities already documented in my CV.',
+      'Professional work completed at Fuinco. The screenshot was captured from an authenticated local build and sanitized to obscure operational details; access credentials and private data are not included.',
     role: 'Frontend Developer',
     contributions: [
       'Implemented geofence and overspeed alert interfaces',
@@ -95,6 +99,8 @@ export const PROJECTS: readonly Project[] = [
     technologies: ['Angular', 'Ionic', 'TypeScript', 'REST APIs'],
     visual: 'logistics',
     confidential: true,
+    imageUrl: 'images/projects/food-logistics-dashboard.png',
+    imageAlt: 'Sanitized Food and Drugs logistics monitoring dashboard',
   },
   {
     slug: 'saudi-taxi-platform',
@@ -103,7 +109,7 @@ export const PROJECTS: readonly Project[] = [
     summary:
       'An operations interface for managing drivers, vehicles, ride activity, and trip information across a transportation platform.',
     context:
-      'Professional work completed at Fuinco. The case study intentionally excludes private product and customer information.',
+      'Professional work completed at Fuinco. The screenshot was captured from an authenticated local build and sanitized to obscure operational details; private product data and credentials are excluded.',
     role: 'Frontend Developer',
     contributions: [
       'Developed driver and vehicle management modules',
@@ -113,5 +119,7 @@ export const PROJECTS: readonly Project[] = [
     technologies: ['Angular', 'Ionic', 'TypeScript'],
     visual: 'transport',
     confidential: true,
+    imageUrl: 'images/projects/taxi-dashboard.png',
+    imageAlt: 'Sanitized Saudi Taxi vehicle operations dashboard',
   },
 ];

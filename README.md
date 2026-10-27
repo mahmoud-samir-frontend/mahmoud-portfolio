@@ -2,7 +2,7 @@
 
 A polished, responsive portfolio for Mahmoud Samir, an Angular Frontend Developer based in Cairo, Egypt. It presents verified professional experience, technical strengths, and privacy-safe case studies for international remote opportunities.
 
-**Live site:** [mahmoud-samir-portfolio.plumape11.chatgpt.site](https://mahmoud-samir-portfolio.plumape11.chatgpt.site)
+**Live site:** [mahmoudsamir-design.github.io/mahmoud-portfolio](https://mahmoudsamir-design.github.io/mahmoud-portfolio/)
 
 ![Portfolio social preview](public/images/social-preview.svg)
 
@@ -12,7 +12,7 @@ A polished, responsive portfolio for Mahmoud Samir, an Angular Frontend Develope
 - Responsive, accessible navigation and keyboard-friendly interactions
 - Angular 20 standalone components with lazy-loaded routes
 - Data-driven skills, social links, and project case studies
-- Dedicated project routes with original illustrative dashboard visuals
+- Dedicated project routes with verified, privacy-safe product screenshots
 - Reduced-motion support and semantic page structure
 - Downloadable CV and functional email, GitHub, and LinkedIn links
 - SEO, Open Graph, Twitter card, favicon, and robots metadata
@@ -78,7 +78,7 @@ npx vercel --prod
 
 ## Content and confidentiality
 
-Professional case studies summarize verified responsibilities from Mahmoud's CV. Their visuals are original portfolio illustrations—not production screenshots. No employer source code, credentials, endpoints, or customer information are included.
+Professional case studies summarize verified responsibilities from Mahmoud's CV. Product screenshots were captured from authenticated local builds and sanitized to hide sensitive operational details. No employer source code, credentials, endpoints, or customer records are included.
 
 ## Contact
 

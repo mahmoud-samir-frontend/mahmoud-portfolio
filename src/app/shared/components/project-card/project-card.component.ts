@@ -9,7 +9,14 @@ import { ProjectVisualComponent } from '../project-visual/project-visual.compone
   imports: [RouterLink, IconComponent, ProjectVisualComponent],
   template: `
     <article class="project-card">
-      <app-project-visual [type]="project().visual" [label]="project().title" />
+      @if (project().imageUrl; as imageUrl) {
+        <figure class="project-media">
+          <img [src]="imageUrl" [alt]="project().imageAlt ?? project().title" loading="lazy" />
+          <figcaption>Verified interface · Sensitive operational data redacted</figcaption>
+        </figure>
+      } @else {
+        <app-project-visual [type]="project().visual" [label]="project().title" />
+      }
       <div class="project-card-content">
         <div class="project-meta">
           <span>{{ number() }}</span><p>{{ project().eyebrow }}</p>
