@@ -13,6 +13,9 @@ export interface Project {
   readonly confidential: boolean;
   readonly imageUrl?: string;
   readonly imageAlt?: string;
+  readonly imageCaption?: string;
+  readonly privacyNote?: string;
+  readonly accessLabel?: string;
   readonly githubUrl?: string;
   readonly liveUrl?: string;
 }

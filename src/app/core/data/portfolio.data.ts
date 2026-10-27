@@ -23,6 +23,54 @@ export const SKILL_GROUPS: readonly SkillGroup[] = [
 
 export const PROJECTS: readonly Project[] = [
   {
+    slug: 'scoutifai-sports-management',
+    title: 'SCOUTIFAI',
+    eyebrow: 'Full product · Sports performance management',
+    summary:
+      'A complete role-based sports operations platform for managing players, teams, training, matches, wellness, medical records, and performance analytics.',
+    context:
+      'A full Angular product implementation with responsive administration workflows, role-specific navigation, bilingual presentation, reusable entity management, and documented demo accounts. The screenshot was captured from the locally running application with its built-in demo data.',
+    role: 'Frontend Developer · Full product implementation',
+    contributions: [
+      'Built a responsive role-based administration workspace in Angular',
+      'Implemented player, team, training, match, wellness, and medical workflows',
+      'Created reusable data-management components and permission-aware navigation',
+      'Added English and Arabic presentation with local and live data modes',
+    ],
+    technologies: ['Angular 19', 'TypeScript', 'RxJS', 'SCSS', 'i18n'],
+    visual: 'analytics',
+    confidential: false,
+    imageUrl: 'images/projects/scoutifai-dashboard.png',
+    imageAlt: 'SCOUTIFAI sports administration and performance dashboard',
+    imageCaption: 'Running Angular product · Built-in sports operations demo data',
+    accessLabel: 'Local full-product implementation',
+  },
+  {
+    slug: 'fuinco-admin-dashboard',
+    title: 'Fuinco Admin Dashboard',
+    eyebrow: 'Full-stack project · Content management',
+    summary:
+      'A standalone bilingual control center for managing website content, calls to action, feature sections, localization, and synchronized route information.',
+    context:
+      'I designed and built this complete project end to end: a React and TypeScript administration frontend connected to a FastAPI and SQLite backend with authentication, persisted content, and structured editing workflows.',
+    role: 'Full-stack Developer · End-to-end ownership',
+    contributions: [
+      'Architected and implemented the complete frontend and backend workflow',
+      'Built authenticated content editing with persistent SQLite storage',
+      'Implemented English and Arabic content controls plus light and dark themes',
+      'Created structured editors for site, hero, features, statistics, and routes',
+    ],
+    technologies: ['React', 'TypeScript', 'Vite', 'FastAPI', 'SQLite'],
+    visual: 'analytics',
+    confidential: true,
+    imageUrl: 'images/projects/fuinco-admin-dashboard.png',
+    imageAlt: 'Fuinco Admin Dashboard hero-content editor',
+    imageCaption: 'Running full-stack product · Complete end-to-end implementation',
+    privacyNote:
+      'This authenticated editor view contains managed website content only. Login credentials, authentication tokens, backend source, and database records are not published.',
+    accessLabel: 'Private full-stack project',
+  },
+  {
     slug: 'novadash',
     title: 'NovaDash',
     eyebrow: 'Personal concept · Angular admin template',
@@ -60,6 +108,9 @@ export const PROJECTS: readonly Project[] = [
     confidential: true,
     imageUrl: 'images/projects/sareb-platinum-dashboard.png',
     imageAlt: 'Sanitized Sareb Platinum fleet-management dashboard',
+    imageCaption: 'Authenticated product interface · Sensitive operational data redacted',
+    privacyNote:
+      'Operational identifiers are redacted, and no credentials, customer records, source code, or API details are published.',
   },
   {
     slug: 'skai-environmental-intelligence',
@@ -81,6 +132,9 @@ export const PROJECTS: readonly Project[] = [
     confidential: true,
     imageUrl: 'images/projects/skai-dashboard.png',
     imageAlt: 'SKAI environmental intelligence interface showing an industrial monitoring model',
+    imageCaption: 'Authenticated product interface · Demo monitoring environment',
+    privacyNote:
+      'The interface is shown in demo mode and contains no credentials, customer records, source code, or API details.',
   },
   {
     slug: 'food-drugs-logistics',
@@ -89,7 +143,7 @@ export const PROJECTS: readonly Project[] = [
     summary:
       'A logistics interface for tracking shipments and surfacing transport conditions that matter to time-sensitive operations.',
     context:
-      'Professional work completed at Fuinco. The screenshot was captured from an authenticated local build and sanitized to obscure operational details; access credentials and private data are not included.',
+      'Professional work completed at Fuinco. The screenshot was captured from an authenticated local build and shows the temperature and humidity monitoring grid with its real operational readings.',
     role: 'Frontend Developer',
     contributions: [
       'Implemented geofence and overspeed alert interfaces',
@@ -100,7 +154,10 @@ export const PROJECTS: readonly Project[] = [
     visual: 'logistics',
     confidential: true,
     imageUrl: 'images/projects/food-temperature-monitoring.png',
-    imageAlt: 'Sanitized Food and Drugs temperature and humidity monitoring interface',
+    imageAlt: 'Food and Drugs temperature and humidity monitoring interface with operational readings',
+    imageCaption: 'Authenticated product interface · Real monitoring records',
+    privacyNote:
+      'Real monitoring values are shown with project-owner approval. Credentials, authentication data, source code, and API details are not published.',
   },
   {
     slug: 'saudi-taxi-platform',
@@ -109,7 +166,7 @@ export const PROJECTS: readonly Project[] = [
     summary:
       'An operations interface for managing drivers, vehicles, ride activity, and trip information across a transportation platform.',
     context:
-      'Professional work completed at Fuinco. The screenshot was captured from an authenticated local build and sanitized to obscure operational details; private product data and credentials are excluded.',
+      'Professional work completed at Fuinco. The screenshot was captured from an authenticated local build and shows the Taxi Profile administration screen with real fare configuration records.',
     role: 'Frontend Developer',
     contributions: [
       'Developed driver and vehicle management modules',
@@ -119,7 +176,10 @@ export const PROJECTS: readonly Project[] = [
     technologies: ['Angular', 'Ionic', 'TypeScript'],
     visual: 'transport',
     confidential: true,
-    imageUrl: 'images/projects/taxi-live-tracking.png',
-    imageAlt: 'Sanitized Saudi Taxi live vehicle-tracking interface',
+    imageUrl: 'images/projects/taxi-profile-management.png',
+    imageAlt: 'Saudi Taxi fare-profile management interface with configuration records',
+    imageCaption: 'Authenticated product interface · Real fare configuration records',
+    privacyNote:
+      'Real fare configuration values are shown with project-owner approval. No driver identity, live vehicle location, credential, source code, or API detail is published.',
   },
 ];

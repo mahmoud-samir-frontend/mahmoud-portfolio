@@ -12,7 +12,7 @@ import { ProjectVisualComponent } from '../project-visual/project-visual.compone
       @if (project().imageUrl; as imageUrl) {
         <figure class="project-media">
           <img [src]="imageUrl" [alt]="project().imageAlt ?? project().title" loading="lazy" />
-          <figcaption>Verified interface · Sensitive operational data redacted</figcaption>
+          <figcaption>{{ project().imageCaption ?? 'Verified product interface' }}</figcaption>
         </figure>
       } @else {
         <app-project-visual [type]="project().visual" [label]="project().title" />

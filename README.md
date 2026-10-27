@@ -12,7 +12,8 @@ A polished, responsive portfolio for Mahmoud Samir, an Angular Frontend Develope
 - Responsive, accessible navigation and keyboard-friendly interactions
 - Angular 20 standalone components with lazy-loaded routes
 - Data-driven skills, social links, and project case studies
-- Dedicated project routes with verified, privacy-safe product screenshots
+- Dedicated project routes with verified screenshots from running product builds
+- Full case studies for SCOUTIFAI and an end-to-end React/FastAPI admin dashboard
 - Reduced-motion support and semantic page structure
 - Downloadable CV and functional email, GitHub, and LinkedIn links
 - SEO, Open Graph, Twitter card, favicon, and robots metadata
@@ -78,7 +79,7 @@ npx vercel --prod
 
 ## Content and confidentiality
 
-Professional case studies summarize verified responsibilities from Mahmoud's CV. Product screenshots were captured from authenticated local builds and sanitized to hide sensitive operational details. No employer source code, credentials, endpoints, or customer records are included.
+Professional case studies summarize verified responsibilities from Mahmoud's CV. Product screenshots were captured from authenticated local builds. Approved operational values appear in the Food and Taxi views, while credentials, authentication data, source code, API details, driver identities, and live vehicle locations remain excluded.
 
 ## Contact
 

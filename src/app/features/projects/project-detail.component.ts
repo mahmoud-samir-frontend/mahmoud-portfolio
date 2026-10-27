@@ -22,7 +22,7 @@ import { ProjectVisualComponent } from '../../shared/components/project-visual/p
             <div class="case-meta">
               <div><small>Role</small><strong>{{ project.role }}</strong></div>
               <div><small>Focus</small><strong>{{ project.technologies.slice(0, 3).join(' · ') }}</strong></div>
-              <div><small>Access</small><strong>{{ project.confidential ? 'Private professional product' : 'Portfolio concept' }}</strong></div>
+              <div><small>Access</small><strong>{{ project.accessLabel ?? (project.confidential ? 'Private professional product' : 'Portfolio concept') }}</strong></div>
             </div>
           </div>
         </header>
@@ -31,7 +31,7 @@ import { ProjectVisualComponent } from '../../shared/components/project-visual/p
           @if (project.imageUrl; as imageUrl) {
             <figure class="project-media case-project-media">
               <img [src]="imageUrl" [alt]="project.imageAlt ?? project.title" />
-              <figcaption>Authenticated local product build · Sensitive operational data redacted</figcaption>
+              <figcaption>{{ project.imageCaption ?? 'Verified product interface' }}</figcaption>
             </figure>
           } @else {
             <app-project-visual [type]="project.visual" [label]="project.title" />
@@ -47,7 +47,7 @@ import { ProjectVisualComponent } from '../../shared/components/project-visual/p
             <div class="case-prose">
               <p>{{ project.context }}</p>
               @if (project.confidential) {
-                <div class="privacy-note"><app-icon name="check" /><p><strong>Confidentiality respected.</strong> This verified product view was captured from a local build. Operational identifiers are redacted, and no credentials, customer records, source code, or API details are published.</p></div>
+                <div class="privacy-note"><app-icon name="check" /><p><strong>Confidentiality respected.</strong> {{ project.privacyNote ?? 'No credentials, customer records, source code, or API details are published.' }}</p></div>
               }
             </div>
           </div>
