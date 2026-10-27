@@ -99,8 +99,8 @@ export const PROJECTS: readonly Project[] = [
     technologies: ['Angular', 'Ionic', 'TypeScript', 'REST APIs'],
     visual: 'logistics',
     confidential: true,
-    imageUrl: 'images/projects/food-logistics-dashboard.png',
-    imageAlt: 'Sanitized Food and Drugs logistics monitoring dashboard',
+    imageUrl: 'images/projects/food-temperature-monitoring.png',
+    imageAlt: 'Sanitized Food and Drugs temperature and humidity monitoring interface',
   },
   {
     slug: 'saudi-taxi-platform',
@@ -119,7 +119,7 @@ export const PROJECTS: readonly Project[] = [
     technologies: ['Angular', 'Ionic', 'TypeScript'],
     visual: 'transport',
     confidential: true,
-    imageUrl: 'images/projects/taxi-dashboard.png',
-    imageAlt: 'Sanitized Saudi Taxi vehicle operations dashboard',
+    imageUrl: 'images/projects/taxi-live-tracking.png',
+    imageAlt: 'Sanitized Saudi Taxi live vehicle-tracking interface',
   },
 ];
