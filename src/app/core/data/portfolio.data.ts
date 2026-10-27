@@ -1,7 +1,7 @@
 import { Project, SkillGroup, SocialLink } from '../models/portfolio.models';
 
 export const SOCIAL_LINKS: readonly SocialLink[] = [
-  { label: 'GitHub', href: 'https://github.com/mahmoudsamir-design', icon: 'github' },
+  { label: 'GitHub', href: 'https://github.com/mahmoud-samir-frontend', icon: 'github' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/mahmoud-samir-mahmoud/', icon: 'linkedin' },
   { label: 'Email', href: 'mailto:Mahmoud.samirr148@gmail.com', icon: 'mail' },
 ];
@@ -44,7 +44,7 @@ export const PROJECTS: readonly Project[] = [
     imageAlt: 'SCOUTIFAI sports administration and performance dashboard',
     imageCaption: 'Running Angular product · Built-in sports operations demo data',
     accessLabel: 'Local full-product implementation',
-    githubUrl: 'https://github.com/mahmoudsamir-design/scoutifai',
+    githubUrl: 'https://github.com/mahmoud-samir-frontend/scoutifai',
   },
   {
     slug: 'novadash',
@@ -68,7 +68,7 @@ export const PROJECTS: readonly Project[] = [
     imageAlt: 'NovaDash Fuinco administration hero-content editor',
     imageCaption: 'Running NovaDash full-stack product · Complete end-to-end implementation',
     accessLabel: 'Public source project',
-    githubUrl: 'https://github.com/mahmoudsamir-design/nova-dashboard',
+    githubUrl: 'https://github.com/mahmoud-samir-frontend/nova-dashboard',
   },
   {
     slug: 'sareb-platinum',

@@ -33,6 +33,6 @@ export class ContactComponent {
   protected display(label: string): string {
     if (label === 'Email') return 'Mahmoud.samirr148@gmail.com';
     if (label === 'LinkedIn') return '/in/mahmoud-samir587766247';
-    return '@mahmoudsamir-design';
+    return '@mahmoud-samir-frontend';
   }
 }

@@ -22,7 +22,7 @@ import { IconComponent } from '../../shared/components/icon/icon.component';
             <a class="button button-secondary" href="Mahmoud_Samir_CV.pdf" download>Download CV <app-icon name="download" /></a>
           </div>
           <div class="hero-socials">
-            <a href="https://github.com/mahmoudsamir-design" target="_blank" rel="noreferrer"><app-icon name="github" />GitHub</a>
+            <a href="https://github.com/mahmoud-samir-frontend" target="_blank" rel="noreferrer"><app-icon name="github" />GitHub</a>
             <a href="https://www.linkedin.com/in/mahmoud-samir-mahmoud/" target="_blank" rel="noreferrer"><app-icon name="linkedin" />LinkedIn</a>
           </div>
         </div>
