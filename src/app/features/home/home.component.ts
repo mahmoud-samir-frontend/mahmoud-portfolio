@@ -23,7 +23,7 @@ import { IconComponent } from '../../shared/components/icon/icon.component';
           </div>
           <div class="hero-socials">
             <a href="https://github.com/mahmoudsamir-design" target="_blank" rel="noreferrer"><app-icon name="github" />GitHub</a>
-            <a href="https://www.linkedin.com/in/mahmoud-samir587766247" target="_blank" rel="noreferrer"><app-icon name="linkedin" />LinkedIn</a>
+            <a href="https://www.linkedin.com/in/mahmoud-samir-mahmoud/" target="_blank" rel="noreferrer"><app-icon name="linkedin" />LinkedIn</a>
           </div>
         </div>
 

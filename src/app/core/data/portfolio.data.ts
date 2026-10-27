@@ -2,7 +2,7 @@ import { Project, SkillGroup, SocialLink } from '../models/portfolio.models';
 
 export const SOCIAL_LINKS: readonly SocialLink[] = [
   { label: 'GitHub', href: 'https://github.com/mahmoudsamir-design', icon: 'github' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/mahmoud-samir587766247', icon: 'linkedin' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/mahmoud-samir-mahmoud/', icon: 'linkedin' },
   { label: 'Email', href: 'mailto:Mahmoud.samirr148@gmail.com', icon: 'mail' },
 ];
 
@@ -44,6 +44,7 @@ export const PROJECTS: readonly Project[] = [
     imageAlt: 'SCOUTIFAI sports administration and performance dashboard',
     imageCaption: 'Running Angular product · Built-in sports operations demo data',
     accessLabel: 'Local full-product implementation',
+    githubUrl: 'https://github.com/mahmoudsamir-design/scoutifai',
   },
   {
     slug: 'novadash',
@@ -52,7 +53,7 @@ export const PROJECTS: readonly Project[] = [
     summary:
       'A bilingual control center for managing website content, calls to action, feature sections, localization, and synchronized route information.',
     context:
-      'NovaDash is the Fuinco Admin Dashboard. I designed and built this complete project end to end: a React and TypeScript administration frontend connected to a FastAPI and SQLite backend with authentication, persisted content, and structured editing workflows.',
+      'NovaDash is the Fuinco Admin Dashboard. I designed and built this complete project end to end: a React and TypeScript administration frontend connected to a FastAPI and SQLite backend with authentication, persisted content, and structured editing workflows. Its public repository contains the sanitized application source without runtime credentials or database records.',
     role: 'Full-stack Developer · End-to-end ownership',
     contributions: [
       'Architected and implemented the complete frontend and backend workflow',
@@ -62,13 +63,12 @@ export const PROJECTS: readonly Project[] = [
     ],
     technologies: ['React', 'TypeScript', 'Vite', 'FastAPI', 'SQLite'],
     visual: 'analytics',
-    confidential: true,
+    confidential: false,
     imageUrl: 'images/projects/fuinco-admin-dashboard.png',
     imageAlt: 'NovaDash Fuinco administration hero-content editor',
     imageCaption: 'Running NovaDash full-stack product · Complete end-to-end implementation',
-    privacyNote:
-      'This authenticated editor view contains managed website content only. Login credentials, authentication tokens, backend source, and database records are not published.',
-    accessLabel: 'Private full-stack project',
+    accessLabel: 'Public source project',
+    githubUrl: 'https://github.com/mahmoudsamir-design/nova-dashboard',
   },
   {
     slug: 'sareb-platinum',

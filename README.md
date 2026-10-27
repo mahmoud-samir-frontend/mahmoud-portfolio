@@ -83,7 +83,7 @@ Professional case studies summarize verified responsibilities from Mahmoud's CV.
 
 ## Contact
 
-- [LinkedIn](https://www.linkedin.com/in/mahmoud-samir587766247)
+- [LinkedIn](https://www.linkedin.com/in/mahmoud-samir-mahmoud/)
 - [GitHub](https://github.com/mahmoudsamir-design)
 - [Email](mailto:Mahmoud.samirr148@gmail.com)
 
