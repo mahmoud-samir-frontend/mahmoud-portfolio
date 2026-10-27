@@ -27,11 +27,11 @@ jobs:
       - run: npm run test:ci
       - run: npm run build -- --base-href /mahmoud-portfolio/
       - name: Add SPA route fallback
-        run: cp dist/mahmoud-portfolio/browser/index.html dist/mahmoud-portfolio/browser/404.html
+        run: cp dist/index.html dist/404.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/mahmoud-portfolio/browser
+          path: dist
 
   deploy:
     environment:

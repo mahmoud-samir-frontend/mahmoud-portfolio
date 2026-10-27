@@ -63,7 +63,7 @@ npm run test:ci
 npm run build
 ```
 
-The production output is written to `dist/mahmoud-portfolio/browser`.
+The production output is written to `dist`.
 
 ## Deployment
 
