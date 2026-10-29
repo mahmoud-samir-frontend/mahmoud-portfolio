@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { PROJECTS } from '../../core/data/portfolio.data';
+import { Component, inject } from '@angular/core';
+import { LocaleService } from '../../core/services/locale.service';
 import { ProjectCardComponent } from '../../shared/components/project-card/project-card.component';
 import { SectionHeadingComponent } from '../../shared/components/section-heading/section-heading.component';
 
@@ -11,12 +11,12 @@ import { SectionHeadingComponent } from '../../shared/components/section-heading
       <div class="container">
         <app-section-heading
           index="03"
-          eyebrow="Selected work"
-          title="Products shaped around real operational needs."
-          description="A selection of professional contributions and one clearly labeled personal dashboard concept. Employer work is described without exposing proprietary implementation details."
+          [eyebrow]="locale.copy().projects.eyebrow"
+          [title]="locale.copy().projects.title"
+          [description]="locale.copy().projects.description"
         />
         <div class="projects-list">
-          @for (project of projects; track project.slug; let index = $index) {
+          @for (project of locale.projects(); track project.slug; let index = $index) {
             <app-project-card [project]="project" [number]="(index + 1).toString().padStart(2, '0')" />
           }
         </div>
@@ -25,5 +25,5 @@ import { SectionHeadingComponent } from '../../shared/components/section-heading
   `,
 })
 export class ProjectsComponent {
-  protected readonly projects = PROJECTS;
+  protected readonly locale = inject(LocaleService);
 }

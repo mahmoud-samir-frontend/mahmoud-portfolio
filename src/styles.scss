@@ -32,6 +32,7 @@ img, svg { display: block; }
 .nav-actions { display: flex; align-items: center; gap: 8px; }
 .icon-button { display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--border); border-radius: 11px; background: var(--surface); color: var(--muted); cursor: pointer; transition: .2s ease; }
 .icon-button:hover { color: var(--accent); border-color: var(--border-strong); transform: translateY(-1px); }
+.language-toggle { font-size: .7rem; font-weight: 750; letter-spacing: .02em; }
 .menu-button { display: none; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 22px; border: 1px solid transparent; border-radius: 12px; font-size: .87rem; font-weight: 650; letter-spacing: -.01em; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease; }
 .button:hover { transform: translateY(-2px); }
@@ -319,6 +320,42 @@ img, svg { display: block; }
   .contribution-grid article { border-right: 0; border-bottom: 1px solid var(--border) !important; }
   .contribution-grid article:last-child { border-bottom: 0 !important; }
   .case-next { align-items: flex-start; flex-direction: column; }
+}
+
+/* Bidirectional layout */
+html[dir='rtl'] body { font-family: Tahoma, Arial, ui-sans-serif, system-ui, sans-serif; text-align: right; }
+html[dir='rtl'] :is(h1, h2, h3, h4) { letter-spacing: 0; }
+html[dir='rtl'] :is(.eyebrow, .project-meta, .card-label, .hero-strip p) { letter-spacing: 0; }
+html[dir='rtl'] .skip-link { right: 12px; left: auto; }
+html[dir='rtl'] .experience-section::after { right: auto; left: -30px; content: 'الخبرة'; letter-spacing: 0; }
+html[dir='rtl'] .experience-card { padding: 0 78px 0 0; }
+html[dir='rtl'] .experience-rail { inset: 0 20px 0 auto; }
+html[dir='rtl'] .experience-rail span { right: -7px; left: auto; }
+html[dir='rtl'] .skill-card { border-right: 0; border-left: 1px solid var(--border); }
+html[dir='rtl'] .skill-card:last-child { border-left: 0; }
+html[dir='rtl'] .skill-card li { padding-right: 14px; padding-left: 0; }
+html[dir='rtl'] .skill-card li::before { right: 0; left: auto; }
+html[dir='rtl'] .about-facts div { padding: 25px 0 0 20px; }
+html[dir='rtl'] .project-media figcaption,
+html[dir='rtl'] .illustrative-label { right: auto; left: 16px; }
+html[dir='rtl'] .contribution-grid article { border-right: 0; border-left: 1px solid var(--border); }
+html[dir='rtl'] .contribution-grid article:nth-child(even) { border-left: 0; }
+html[dir='rtl'] .back-link app-icon { transform: none; }
+html[dir='rtl'] :is(.nav-cta, .button-primary, .text-link) app-icon { transform: scaleX(-1); }
+html[dir='rtl'] .text-link:hover app-icon { transform: scaleX(-1) translateX(4px); }
+html[dir='rtl'] .contact-links strong { direction: ltr; text-align: right; unicode-bidi: plaintext; }
+html[dir='rtl'] :is(.code-window, .project-visual) { direction: ltr; text-align: left; }
+
+@media (max-width: 1000px) {
+  html[dir='rtl'] .skill-card:nth-child(2) { border-left: 0; }
+}
+
+@media (max-width: 640px) {
+  html[dir='rtl'] .experience-card { padding: 0 38px 0 0; }
+  html[dir='rtl'] .experience-rail { right: 7px; left: auto; }
+  html[dir='rtl'] .skill-card { border-left: 0 !important; }
+  html[dir='rtl'] .project-media figcaption { right: auto; left: 10px; }
+  html[dir='rtl'] .contribution-grid article { border-left: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

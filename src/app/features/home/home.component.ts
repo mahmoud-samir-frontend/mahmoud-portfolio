@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, effect, inject } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
+import { LocaleService } from '../../core/services/locale.service';
 import { AboutComponent } from '../about/about.component';
 import { ContactComponent } from '../contact/contact.component';
 import { ExperienceComponent } from '../experience/experience.component';
@@ -13,13 +15,13 @@ import { IconComponent } from '../../shared/components/icon/icon.component';
       <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="availability"><i></i><span>Open to Remote Opportunities</span></div>
-          <p class="hero-intro">Hi, I'm Mahmoud Samir.</p>
-          <h1 id="hero-title">Frontend Developer Building <span>Scalable Digital Experiences.</span></h1>
-          <p class="hero-description">I'm a Frontend Developer with 3+ years of experience specializing in Angular, TypeScript, and Ionic. I build responsive web applications, real-time dashboards, and scalable frontend solutions for business-critical systems.</p>
+          <div class="availability"><i></i><span>{{ locale.copy().home.availability }}</span></div>
+          <p class="hero-intro">{{ locale.copy().home.intro }}</p>
+          <h1 id="hero-title">{{ locale.copy().home.title }} <span>{{ locale.copy().home.titleAccent }}</span></h1>
+          <p class="hero-description">{{ locale.copy().home.description }}</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View my work <app-icon name="arrow" /></a>
-            <a class="button button-secondary" href="Mahmoud_Samir_CV.pdf" download>Download CV <app-icon name="download" /></a>
+            <a class="button button-primary" href="#projects">{{ locale.copy().home.viewWork }} <app-icon name="arrow" /></a>
+            <a class="button button-secondary" href="Mahmoud_Samir_Frontend.pdf" download>{{ locale.copy().home.downloadCv }} <app-icon name="download" /></a>
           </div>
           <div class="hero-socials">
             <a href="https://github.com/mahmoud-samir-frontend" target="_blank" rel="noreferrer"><app-icon name="github" />GitHub</a>
@@ -27,7 +29,7 @@ import { IconComponent } from '../../shared/components/icon/icon.component';
           </div>
         </div>
 
-        <div class="hero-art" aria-label="Illustration of an Angular developer workspace">
+        <div class="hero-art" [attr.aria-label]="locale.copy().home.artAria">
           <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
           <div class="code-window">
             <div class="window-top"><div><i></i><i></i><i></i></div><span>experience.component.ts</span><em>•••</em></div>
@@ -44,14 +46,14 @@ import { IconComponent } from '../../shared/components/icon/icon.component';
             </div>
             <div class="editor-status"><span>Angular 20</span><span>TypeScript</span></div>
           </div>
-          <div class="floating-card card-stack"><app-icon name="code" /><div><small>Core stack</small><strong>Angular · TS · Ionic</strong></div></div>
-          <div class="floating-card card-location"><app-icon name="map" /><div><small>Based in</small><strong>Cairo, Egypt</strong></div></div>
+          <div class="floating-card card-stack"><app-icon name="code" /><div><small>{{ locale.copy().home.coreStack }}</small><strong>Angular · TS · Ionic</strong></div></div>
+          <div class="floating-card card-location"><app-icon name="map" /><div><small>{{ locale.copy().home.basedIn }}</small><strong>{{ locale.copy().home.location }}</strong></div></div>
           <div class="angular-mark" aria-hidden="true"><span>A</span></div>
         </div>
       </div>
       <div class="container hero-strip">
-        <p>Building at the intersection of</p>
-        <div><span>Frontend architecture</span><i></i><span>Real-time data</span><i></i><span>Product experience</span></div>
+        <p>{{ locale.copy().home.buildingAt }}</p>
+        <div><span>{{ locale.copy().home.architecture }}</span><i></i><span>{{ locale.copy().home.realTime }}</span><i></i><span>{{ locale.copy().home.productExperience }}</span></div>
       </div>
     </section>
     <app-about />
@@ -60,4 +62,16 @@ import { IconComponent } from '../../shared/components/icon/icon.component';
     <app-contact />
   `,
 })
-export class HomeComponent {}
+export class HomeComponent {
+  protected readonly locale = inject(LocaleService);
+  private readonly title = inject(Title);
+  private readonly meta = inject(Meta);
+
+  constructor() {
+    effect(() => {
+      const seo = this.locale.copy().seo;
+      this.title.setTitle(seo.title);
+      this.meta.updateTag({ name: 'description', content: seo.description });
+    });
+  }
+}

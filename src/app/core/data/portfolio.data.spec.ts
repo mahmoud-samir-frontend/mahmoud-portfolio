@@ -1,4 +1,5 @@
 import { PROJECTS, SKILL_GROUPS, SOCIAL_LINKS } from './portfolio.data';
+import { ARABIC_PROJECTS, PORTFOLIO_COPY, PROJECTS_BY_LANGUAGE } from './localization.data';
 
 describe('portfolio data', () => {
   it('uses unique, route-safe project slugs', () => {
@@ -21,5 +22,19 @@ describe('portfolio data', () => {
   it('keeps every skill and social group populated', () => {
     expect(SKILL_GROUPS.every((group) => group.skills.length > 0)).toBeTrue();
     expect(SOCIAL_LINKS.every((link) => link.href.length > 0)).toBeTrue();
+  });
+
+  it('keeps Arabic project content aligned with the English routes', () => {
+    expect(ARABIC_PROJECTS.length).toBe(PROJECTS.length);
+    expect(ARABIC_PROJECTS.map((project) => project.slug)).toEqual(
+      PROJECTS.map((project) => project.slug),
+    );
+    expect(PROJECTS_BY_LANGUAGE.ar.every((project) => project.summary.length > 0)).toBeTrue();
+  });
+
+  it('provides complete navigation and SEO copy in both languages', () => {
+    expect(PORTFOLIO_COPY.en.nav.links.length).toBe(PORTFOLIO_COPY.ar.nav.links.length);
+    expect(PORTFOLIO_COPY.en.seo.description.length).toBeGreaterThan(0);
+    expect(PORTFOLIO_COPY.ar.seo.description.length).toBeGreaterThan(0);
   });
 });

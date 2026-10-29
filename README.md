@@ -2,20 +2,21 @@
 
 A polished, responsive portfolio for Mahmoud Samir, an Angular Frontend Developer based in Cairo, Egypt. It presents verified professional experience, technical strengths, and privacy-safe case studies for international remote opportunities.
 
-**Live site:** [mahmoud-samir-frontend.github.io/mahmoud-portfolio](https://mahmoud-samir-frontend.github.io/mahmoud-portfolio/)
+**Live site:** [mahmoud-samir-portfolio.plumape11.chatgpt.site](https://mahmoud-samir-portfolio.plumape11.chatgpt.site/)
 
 ![Portfolio social preview](public/images/social-preview.svg)
 
 ## Highlights
 
-- Premium dark interface with a complete light theme
+- Complete English/LTR and Arabic/RTL experiences
+- Independent light and dark themes with saved preferences
 - Responsive, accessible navigation and keyboard-friendly interactions
 - Angular 20 standalone components with lazy-loaded routes
 - Data-driven skills, social links, and project case studies
 - Dedicated project routes with verified screenshots from running product builds
 - Full case studies for SCOUTIFAI and NovaDash, the end-to-end React/FastAPI Fuinco admin dashboard
 - Reduced-motion support and semantic page structure
-- Downloadable CV and functional email, GitHub, and LinkedIn links
+- Downloadable one-page frontend CV and functional email, GitHub, and LinkedIn links
 - SEO, Open Graph, Twitter card, favicon, and robots metadata
 - Vercel SPA rewrite configuration for reliable route refreshes
 - Automated tests for the app shell and portfolio data integrity
